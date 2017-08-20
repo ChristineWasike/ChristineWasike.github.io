@@ -1,0 +1,54 @@
+.banner-home {
+    background-image: url('http://i.imgur.com/0GjsRvO.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-attachment: fixed;
+    height: 650px;
+    padding-left: 35%;
+    padding-top: 2%;
+}
+
+#title {
+    color: whitesmoke;
+}
+
+.nav-wrapper {
+    background: #8E0E00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.card {
+    align-content: center;
+    width: 150%;
+    height: 150%;
+}
+
+.avatar img {
+    margin-top: 10%;
+    width: 50%;
+    /* height: 50%; */
+    border-radius: 50%;
+}
+
+#information {
+    padding-top: 3%;
+}
+
+#project {
+    height: 50%;
+    width: 50%;
+}
+
+.card {
+    margin: 15%;
+    width: 100%;
+}
