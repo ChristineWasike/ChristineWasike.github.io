@@ -42,8 +42,8 @@
             <li>
               <a href='#information' class="smoothScroll">About</a>
             </li>
-            <li>
-              <a href='#'>Projects</a>
+            <li id="smooth">
+              <a href='#projects'>Projects</a>
             </li>
             <li>
               <a href='#'>Contact</a>
@@ -58,8 +58,8 @@
             <li>
               <a href='#information' class="smoothScroll">About</a>
             </li>
-            <li>
-              <a href='#'>Projects</a>
+            <li id="smooth">
+              <a href='#projects'>Projects</a>
             </li>
             <li>
               <a href='#'>Contact</a>
@@ -72,11 +72,11 @@
     <header class="header banner-home center">
       <div class="row">
         <div class="col s12 m6 offset-s3 avatar">
-          <img style="" class="avatar responsive-img animated bounceInDown" src="http://i.imgur.com/5AWtsZc.jpg">
+          <img class="avatar responsive-img animated bounceInDown" src="http://i.imgur.com/5AWtsZc.jpg">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
 
-              <span class="card-title">Christine Wasike
+              <span id="card-t" class="card-title">Christine Wasike
                 <br>
               </span>
             </div>
@@ -88,9 +88,9 @@
       <div class="row information" id="information">
         <div class="col s12 m6 offset-s3 ">
           <h3 class="animated slideInLeft" id="title">Christine Wasike</h3>
-          <a href="https://github.com/ChristineWasike">
-            <img src="http://icons.iconarchive.com/icons/social-media-icons/glossy-social/512/Github-icon.png" alt="github"
-              style="width:10%;height:10%;" class="responsive-img">
+          <a href="https://github.com/ChristineWasike" target="_blank">
+            <img src="http://icons.iconarchive.com/icons/social-media-icons/glossy-social/512/Github-icon.png" alt="github" style="width:10%;height:10%;"
+              class="responsive-img">
           </a>
           <h5 class="animated slideInLeft" style=" color: whitesmoke;">I am a web developer from Nairobi, Kenya. I am passionate about technology. It gives me the power to create and
             channel out my creativity. </h5>
@@ -101,18 +101,24 @@
 
     <!-- PROJECTS I'VE DONE   -->
 
-    <section>
+    <section id="projects">
       <div class="row">
+        <h4 class="project-title">
+          <span>Projects</span>
+        </h4>
 
         <!-- Dev Link EmberJS project -->
         <div class="col s6 m6 offset-s3">
           <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
               <img id="project" class="responsive-img" src="http://i.imgur.com/OsjlyLp.png">
-              <span class="card-title">Dev-Link</span>
+              <span id="card-t" class="card-title">
+                <a href="http://dev-link.ml/" target="_blank">Dev Link</a>
+              </span>
             </div>
-            <div class="card-action">
-              <a href="http://dev-link.ml/" target="_blank">Dev Link</a>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                little markup to use effectively.</p>
             </div>
           </div>
         </div>
@@ -122,57 +128,104 @@
           <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
               <img id="project" class="responsive-img" src="http://i.imgur.com/NUThphV.png">
-              <span class="card-title">Ticket 254</span>
+              <span id="card-t" class="card-title">
+                <a href="https://nathanmumo.github.io/movietickets/index.html" target="_blank">Ticket 254</a>
+              </span>
             </div>
-            <div class="card-action">
-              <a href="https://nathanmumo.github.io/movietickets/index.html" target="_blank">Ticket 254</a>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                little markup to use effectively.</p>
             </div>
           </div>
         </div>
 
         <!-- Lycity Android Capstone Project -->
         <div class="col s6 m6 offset-s3">
-          <div class="card-panel hoverable">
+          <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
-              <img id="project" class="responive-img" src="" alt="">
-              <span class="card-title">Lycity</span>
+              <img id="project" class="responive-img" src="http://i.imgur.com/Ly9gqNH.png" alt="lycity">
+              <span id="card-t" class="card-title">
+                <a href="https://play.google.com/store/apps/details?id=com.wasike.mymusic" target="_blank">Lycity</a>
+              </span>
             </div>
-            <a href="">Lycity</a>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animations Simple Android transitions Application -->
+        <div class="col s6 m6 offset-s3" id="anita">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="project" class="responive-img" src="http://i.imgur.com/6XqaBVg.png" alt="hair">
+              <span id="card-t" class="card-title">
+                <a href="hairsalonwasike.herokuapp.com" target="_blank">Hair Salon</a>
+              </span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                little markup to use effectively.</p>
+            </div>
           </div>
         </div>
 
         <!-- Spark web java project -->
-        <div class="col s6 m6 offset-s3" id="anita">
-            <div class="card-panel hoverable">
-              <a href="">Hair Salon</a>
-            </div>
-          </div>
-
-          <!-- Animations Simple Android transitions Application -->
-        <div class="col s6 m6 offset-s3" id="anita">
-            <div class="card-panel hoverable">
-              <a href="">Anita's Kitchen</a>
-            </div>
-          </div>
-
-          <!--Anita's Kitchen Second project made  -->
-          <div class="col s6 m6 offset-s3" id="anita">
-              <div class="card-panel hoverable">
-                <a href="">Anita's Kitchen</a>
+        <!-- <div class="col s6 m6 offset-s3">
+            <div class="card hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img id="project" class="responive-img" src="" alt="">
+                <span id = "card-t" class="card-title">Animations</span>
+              </div>
+              <div class="card-action">
+                <a href="" target="_blank">Animations</a>
               </div>
             </div>
+          </div>   -->
 
-       <!-- Ember JS project on asking questions then getting responses -->
+        <!--Anita's Kitchen Second project made  -->
+        <!-- <div class="col s6 m6 offset-s3" id="anita">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="project" class="responive-img" src="" alt="">
+              <span id = "card-t" class="card-title">Anita's Kitchen</span>
+            </div>
+            <div class="card-action">
+              <a href="" target="_blank">Anita's Kitchen</a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Ember JS project on asking questions then getting responses -->
         <div class="col s6 m6 offset-s3">
-          <div class="card-panel hoverable">
-            <a href="">Message Board</a>
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="project" class="responive-img" src="http://i.imgur.com/tYftKeY.png" alt="">
+              <span id="card-t" class="card-title">
+                <a href="https://message-board-26105.firebaseapp.com/" target="_blank">Messenger Board</a>
+              </span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                little markup to use effectively.</p>
+            </div>
           </div>
         </div>
 
         <!-- Meal Tracker Angular JS project That filters out foods based on calories -->
         <div class="col s6 m6 offset-s3">
-          <div class="card-panel hoverable">
-            <a href="">Meal Tracker</a>
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="project" class="responive-img" src="http://i.imgur.com/irAPqmC.png" alt="">
+              <span id="card-t" class="card-title">
+                <a href="https://github-eye.netlify.com/" target="_blank">Github User Look Up</a>
+              </span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                little markup to use effectively.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -208,7 +261,7 @@
       </div>
       <div class="footer-copyright">
         <div class="container">
-          © 2014 Copyright Christine Wasike
+          © 2017 Copyright Christine Wasike
           <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
       </div>
