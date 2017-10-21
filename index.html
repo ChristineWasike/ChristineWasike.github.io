@@ -30,12 +30,40 @@
       <nav>
         <div class="nav-wrapper">
           <!-- <a 'index' class="brand-logo center"><img src="http://i.imgur.com/rG21AQM.png" alt="Dev-Link"></a> -->
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href='#'><i class="material-icons">home</i></a></li>
-            <li><a href='#information' class="smoothScroll">About</a></li>
-            <li><a href='#'>Projects</a></li>
-            <li><a href='#'>Contact</a></li>
+            <li>
+              <a href='#'>
+                <i class="material-icons">home</i>
+              </a>
+            </li>
+            <li>
+              <a href='#information' class="smoothScroll">About</a>
+            </li>
+            <li>
+              <a href='#'>Projects</a>
+            </li>
+            <li>
+              <a href='#'>Contact</a>
+            </li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li>
+              <a href='#'>
+                <i class="material-icons">home</i>
+              </a>
+            </li>
+            <li>
+              <a href='#information' class="smoothScroll">About</a>
+            </li>
+            <li>
+              <a href='#'>Projects</a>
+            </li>
+            <li>
+              <a href='#'>Contact</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -44,11 +72,13 @@
     <header class="header banner-home center">
       <div class="row">
         <div class="col s12 m6 offset-s3 avatar">
-          <img style="height:170px;" class="responsive-img animated bounceInDown" src="http://i.imgur.com/5AWtsZc.jpg">
+          <img style="" class="avatar responsive-img animated bounceInDown" src="http://i.imgur.com/5AWtsZc.jpg">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
 
-              <span class="card-title">Christine Wasike <br></span>
+              <span class="card-title">Christine Wasike
+                <br>
+              </span>
             </div>
           </div>
         </div>
@@ -57,8 +87,11 @@
 
       <div class="row information" id="information">
         <div class="col s12 m6 offset-s3 ">
-          <h3 class="animated slideInLeft" id="title">Christine Wasike</h3><a href="https://github.com/ChristineWasike"><img src="http://icons.iconarchive.com/icons/social-media-icons/glossy-social/512/Github-icon.png" alt="github" style="width:10%;height:10%;" class="responsive-img"
-            ></a>
+          <h3 class="animated slideInLeft" id="title">Christine Wasike</h3>
+          <a href="https://github.com/ChristineWasike">
+            <img src="http://icons.iconarchive.com/icons/social-media-icons/glossy-social/512/Github-icon.png" alt="github"
+              style="width:10%;height:10%;" class="responsive-img">
+          </a>
           <h5 class="animated slideInLeft" style=" color: whitesmoke;">I am a web developer from Nairobi, Kenya. I am passionate about technology. It gives me the power to create and
             channel out my creativity. </h5>
         </div>
@@ -68,51 +101,118 @@
 
     <!-- PROJECTS I'VE DONE   -->
 
-    <div class="row">
-      <div class="col s6 m6 offset-s3">
-        <div class="card hoverable">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img id="project" class="responsive-img" src="http://i.imgur.com/OsjlyLp.png">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-action">
-            <a href="http://dev-link.ml/">Dev Link</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s6 m6 offset-s3" id="movie">
+    <section>
+      <div class="row">
 
-        <div class="card hoverable">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img id="project" class="responsive-img" src="http://i.imgur.com/NUThphV.png">
-            <span class="card-title">Card Title</span>
+        <!-- Dev Link EmberJS project -->
+        <div class="col s6 m6 offset-s3">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="project" class="responsive-img" src="http://i.imgur.com/OsjlyLp.png">
+              <span class="card-title">Dev-Link</span>
+            </div>
+            <div class="card-action">
+              <a href="http://dev-link.ml/" target="_blank">Dev Link</a>
+            </div>
           </div>
-          <div class="card-action">
-            <a href="https://nathanmumo.github.io/movietickets/index.html">Ticket 254</a>
-          </div>
         </div>
-      </div>
-      <div class="col s6 m6 offset-s3">
-        <div class="card-panel hoverable">
-          <a href="">Pingpong</a>
-        </div>
-      </div>
-      <div class="col s6 m6 offset-s3" id="anita">
-        <div class="card-panel hoverable"><a href="">Anita's Kitchen</a>
-        </div>
-      </div>
-      <div class="col s6 m6 offset-s3">
-        <div class="card-panel hoverable"> <a href="">Message Board</a>
-        </div>
-      </div>
-      <div class="col s6 m6 offset-s3">
-        <div class="card-panel hoverable"> <a href="">Meal Tracker</a>
-        </div>
-      </div>
-    </div>
 
+        <!-- Ticket 254 Prep Project -->
+        <div class="col s6 m6 offset-s3" id="movie">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="project" class="responsive-img" src="http://i.imgur.com/NUThphV.png">
+              <span class="card-title">Ticket 254</span>
+            </div>
+            <div class="card-action">
+              <a href="https://nathanmumo.github.io/movietickets/index.html" target="_blank">Ticket 254</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lycity Android Capstone Project -->
+        <div class="col s6 m6 offset-s3">
+          <div class="card-panel hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img id="project" class="responive-img" src="" alt="">
+              <span class="card-title">Lycity</span>
+            </div>
+            <a href="">Lycity</a>
+          </div>
+        </div>
+
+        <!-- Spark web java project -->
+        <div class="col s6 m6 offset-s3" id="anita">
+            <div class="card-panel hoverable">
+              <a href="">Hair Salon</a>
+            </div>
+          </div>
+
+          <!-- Animations Simple Android transitions Application -->
+        <div class="col s6 m6 offset-s3" id="anita">
+            <div class="card-panel hoverable">
+              <a href="">Anita's Kitchen</a>
+            </div>
+          </div>
+
+          <!--Anita's Kitchen Second project made  -->
+          <div class="col s6 m6 offset-s3" id="anita">
+              <div class="card-panel hoverable">
+                <a href="">Anita's Kitchen</a>
+              </div>
+            </div>
+
+       <!-- Ember JS project on asking questions then getting responses -->
+        <div class="col s6 m6 offset-s3">
+          <div class="card-panel hoverable">
+            <a href="">Message Board</a>
+          </div>
+        </div>
+
+        <!-- Meal Tracker Angular JS project That filters out foods based on calories -->
+        <div class="col s6 m6 offset-s3">
+          <div class="card-panel hoverable">
+            <a href="">Meal Tracker</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer here -->
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2014 Copyright Christine Wasike
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
 
 
   </div>
