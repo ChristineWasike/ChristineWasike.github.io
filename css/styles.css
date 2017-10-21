@@ -1,5 +1,5 @@
-
-@media screen and (max-width: 995px) , screen and (max-height: 700px) {
+@media screen and (max-width: 995px),
+screen and (max-height: 700px) {
     .banner-home {
         background-image: url('http://i.imgur.com/0GjsRvO.jpg');
         background-position: center center;
@@ -11,10 +11,8 @@
         min-height: 100%;
         padding-left: 35%;
         padding-top: 2%;
-    } 
-  }
-
-
+    }
+}
 
 #title {
     color: whitesmoke;
@@ -55,9 +53,50 @@ body {
     width: 50%;
 }
 
+.project-title {
+    line-height: 0.5;
+    text-align: center;
+}
+
+.project-title span {
+    display: inline-block;
+    position: relative;
+}
+
+.project-title span:before,
+.project-title span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid rgb(3, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+    top: 0;
+    width: 50%;
+}
+
+.project-title span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.project-title span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
 .card {
     margin: 15%;
     width: 100%;
+}
+
+.card-title {
+    margin-left: 50%;
+    margin-top: 0;
+     
+}
+
+#card-t {
+    color: black;
 }
 
 .page-footer {
@@ -67,5 +106,4 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1F1C18, #8E0E00);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 30%; 
 }
