@@ -1,5 +1,5 @@
-@media screen and (max-width: 995px),
-screen and (max-height: 700px) {
+/* @media screen and (max-width: 995px),
+screen and (max-height: 700px) { */
     .banner-home {
         background-image: url('http://i.imgur.com/0GjsRvO.jpg');
         background-position: center center;
@@ -12,7 +12,7 @@ screen and (max-height: 700px) {
         padding-left: 35%;
         padding-top: 2%;
     }
-}
+/* } */
 
 #title {
     color: whitesmoke;
