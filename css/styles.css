@@ -4,7 +4,7 @@ screen and (max-height: 700px) {
         background-image: url('http://i.imgur.com/0GjsRvO.jpg');
         background-position: center center;
         background-size: cover;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 1);
         background-attachment: fixed;
         /* position: fixed;      */
         min-width: 100%;
