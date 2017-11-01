@@ -6,6 +6,7 @@ screen and (max-height: 700px) {
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.5);
         opacity: 0.8;
+        z-index:10;
         background-attachment: fixed;
         /* position: fixed;      */
         min-width: 100%;
