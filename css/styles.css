@@ -4,19 +4,22 @@ screen and (max-height: 700px) {
         background-image: url('http://i.imgur.com/0GjsRvO.jpg');
         background-position: center center;
         background-size: cover;
-        background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0.8;
         background-attachment: fixed;
         /* position: fixed;      */
         min-width: 100%;
         min-height: 100%;
         padding-left: 35%;
         padding-top: 2%;
+        padding-bottom:11%;
     }
 }
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    height: 100;
   }
 
 #title {
