@@ -1,17 +1,23 @@
 // Business Logic
 
-window.addEventListener("load", function() { window. scrollTo(0, 0); });
+window.addEventListener("load", function () {
+    window.scrollTo(0, 0);
+});
 
 // User interface
 
-$document.ready(function () {
-    $(".button-collapse").sideNav();
+$(".button-collapse").sideNav();
 
+$(".navLink").on('click', function (event) {
+    if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function () {
+            window.location.hash = hash;
+        });
+    }
 });
-$('#smooth, #projects').on('click', function(e) {
-    e.preventDefault();
-    var target = $(this).get(0).id == 'smooth' ? $('#projects') : $('#smooth');
-    // $('html, body').stop().animate({
-    //   scrollTop: target.offset().top
-    // }, 1000);
-  });
