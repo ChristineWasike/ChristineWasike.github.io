@@ -29,10 +29,9 @@
 
   <div class="navbar-fixed">
     <!-- this will give the navbar the fixed property -->
-    <nav>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
       <div class="nav-wrapper">
-        <!-- <a 'index' class="brand-logo center"><img src="http://i.imgur.com/rG21AQM.png" alt="Dev-Link"></a> -->
-        <a href="#header" data-activates="mobile-demo" class="button-collapse">
+        <a href="#header" data-activates="mobile-demo" class="button-collapse" data-toggle="collapse" data-target=".navbar-main-collapse">
           <i class="material-icons">menu</i>
         </a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
@@ -73,17 +72,15 @@
   <!-- THE HEADING TO MY PORTFOLIO -->
   <header id="header" class="header banner-home center">
     <div class="row">
-      <!-- <div class="col s12 m6 offset-s3 avatar">
-        <img class="avatar responsive-img animated bounceInDown" src="http://i.imgur.com/5AWtsZc.jpg"> -->
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
 
-            <span id="card-t" class="card-title">Christine Wasike
-              <br>
-            </span>
-          </div>
+          <span id="card-t" class="card-title">Christine Wasike
+            <br>
+          </span>
         </div>
       </div>
+    </div>
     </div>
 
 
@@ -94,19 +91,19 @@
           <img src="http://icons.iconarchive.com/icons/social-media-icons/glossy-social/512/Github-icon.png" alt="github" style="width:10%;height:10%;"
             class="responsive-img">
         </a>
-        <h5 class="animated slideInLeft" style=" color: whitesmoke;">I am a web developer from Nairobi, Kenya. I am passionate about technology. It gives me the power to create and channel
-          out my creativity. </h5>
+        <h5 class="animated slideInLeft" style=" color: whitesmoke;">I am a web and android developer from Nairobi, Kenya. I am passionate about technology. It gives me the power to
+          create and channel out my creativity. </h5>
       </div>
     </div>
 
   </header>
 
-  <div class="container" id="projects">
+  <div class="container">
     <!-- PROJECTS I'VE DONE   -->
 
     <section>
       <div class="row">
-        <h4 class="project-title">
+        <h4 class="project-title" id="projects">
           <span>Projects</span>
         </h4>
 
@@ -120,8 +117,8 @@
               </span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
+              <p>Devlink links programmers together, it also acts as a platform of keeping up with the latest technology in
+                the market.</p>
             </div>
           </div>
         </div>
@@ -136,8 +133,8 @@
               </span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
+              <p>A web application that enables a user to get movie tickets where a unique QR code is sent to their email.You
+                can also get updates and news on movies.</p>
             </div>
           </div>
         </div>
@@ -152,8 +149,8 @@
               </span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
+              <p>A mobile android app that enables a user to access lyrics to their favourite song upon searching your it in
+                an input field.</p>
             </div>
           </div>
         </div>
@@ -168,8 +165,8 @@
               </span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
+              <p>This is a web application built with Spark java framework that enables clients and stylists to get information
+                from one another.</p>
             </div>
           </div>
         </div>
@@ -184,8 +181,8 @@
               </span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
+              <p>This project is designed to create a platform for users to share riddles and post answersto then if they can
+                guess rightly.</p>
             </div>
           </div>
         </div>
@@ -200,8 +197,8 @@
               </span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
+              <p>This is a web application designed to enable users to search for github users displaying their profile pictures
+                and repositories.</p>
             </div>
           </div>
         </div>
@@ -215,34 +212,53 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Contact information</h5>
+          <h5 class="white-text">Talk to me</h5>
+
+          <form action="https://formspree.io/christinewasike22@gmail.com" method="POST" class="form-inline" role="form">
+
+            <div class="form-group">
+              <label class="sr-only" for="">Your email</label>
+              <input type="email" name="email" class="form-control" id="" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="">Message</label>
+              <input type="email" name="message" class="form-control" id="" placeholder="Message">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
           <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Contact information</h5>
-          <a class="grey-text text-lighten-3" href="https://github.com/ChristineWasike/" target="_blank">
+          <a class="grey-text text-lighten-3" href="https://github.com/ChristineWasike/" target="_blank" id="github">
             <img src="img/github-logo.png" alt="github" style="height:10%; width:10%">
           </a>
-          <a class="grey-text text-lighten-3" href="https://www.facebook.com/christy.wasike">
+          <a class="grey-text text-lighten-3" href="https://www.facebook.com/christy.wasike" target="_blank" id="facebook">
             <img src="img/facebook-logo.png" alt="facebook" style="height:10%; width:10%">
           </a>
-          <a class="grey-text text-lighten-3" href="#!">
+          <a class="grey-text text-lighten-3" href="linkedin.com/in/christinewasike/" target="_blank" id="linkedin">
             <img src="img/linkedin.png" style="height:10%; width:10%" alt="linkedin">
           </a>
+          <!-- My avatar -->
+          <div class="avatar">
+            <img class="avatar responsive-img" src="http://i.imgur.com/5AWtsZc.jpg">
+          </div>
         </div>
       </div>
-    </div>
-    <div id="contacts" class="footer-copyright">
-      <div class="container">
-        ©
-        <script language="javascript" type="text/javascript">
-          var today = new Date()
-          var year = today.getFullYear()
-          document.write(year)
-        </script> Copyright Christine Wasike
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      <div id="contacts" class="footer-copyright">
+        <div class="container">
+          ©
+          <script language="javascript" type="text/javascript">
+            var today = new Date()
+            var year = today.getFullYear()
+            document.write(year)
+          </script> Copyright Christine Wasike
+          <a class="grey-text text-lighten-4 right" href="christinewasike22@gmail.com">christinewasike22@gmail.com</a>
+        </div>
       </div>
-    </div>
   </footer>
 
 
@@ -256,18 +272,18 @@
   <script src="js/main.js"></script>
   <script>
     $("a[href^='#']").on('click', function (event) {
-    if (this.hash !== "") {
+      if (this.hash !== "") {
         event.preventDefault();
 
         var hash = this.hash;
 
         $('html, body').animate({
-            scrollTop: $(hash).offset().top
+          scrollTop: $(hash).offset().top
         }, 800, function () {
-            window.location.hash = hash;
+          window.location.hash = hash;
         });
-    }
-});
+      }
+    });
   </script>
 </body>
 

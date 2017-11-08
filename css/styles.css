@@ -48,9 +48,9 @@ body {
 
 .avatar img {
     margin-top: 10%;
-    width: 50%;
+    /* width: 50%; */
     /* height: 50%; */
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 #information {
@@ -115,4 +115,8 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1F1C18, #8E0E00);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#github, #facebook, #linkedin {
+    padding-left: 10%;
 }
